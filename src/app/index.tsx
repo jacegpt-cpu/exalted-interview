@@ -303,12 +303,24 @@ export default function SurveyScreen() {
         survey2,
       };
 
+      const formParams = new URLSearchParams();
+      formParams.append("dateJoined", dateJoined);
+      formParams.append("name", answers.name.trim());
+      formParams.append("dateOfBirth", dateOfBirth);
+      formParams.append("phoneNumber", answers.phone.trim());
+      formParams.append("ign", answers.ign.trim());
+      formParams.append("uid", answers.uid.trim());
+      formParams.append("playstyle", playstyle);
+      formParams.append("survey1", survey1);
+      formParams.append("survey2", survey2);
+
       await fetch(
         "https://script.google.com/macros/s/AKfycbyrD7DMflNs6pvcwbkyMSRNGfMDMu7fHK1Quscvtvh7tvsZnDOK-RuIBUAiMrQ_CDnj/exec",
         {
           method: "POST",
           mode: "no-cors",
-          body: JSON.stringify(payload),
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: formParams.toString(),
         }
       );
 
