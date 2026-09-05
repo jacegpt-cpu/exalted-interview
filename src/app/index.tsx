@@ -307,6 +307,7 @@ export default function SurveyScreen() {
         "https://script.google.com/macros/s/AKfycbyrD7DMflNs6pvcwbkyMSRNGfMDMu7fHK1Quscvtvh7tvsZnDOK-RuIBUAiMrQ_CDnj/exec",
         {
           method: "POST",
+          mode: "no-cors",
           headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify(payload),
         }
