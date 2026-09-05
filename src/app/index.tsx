@@ -308,7 +308,6 @@ export default function SurveyScreen() {
         {
           method: "POST",
           mode: "no-cors",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify(payload),
         }
       );
@@ -792,7 +791,7 @@ export default function SurveyScreen() {
                 <View style={{ flex: 1 }}>
                   <Text style={styles.successTitle}>Application Submitted Successfully!</Text>
                   <Text style={styles.successSub}>
-                    Our Clan Admins will contact you shortly via phone or in-game UID. Welcome aboard!
+                    Our Clan Admins will contact you shortly via phone or social media. Welcome aboard!
                   </Text>
                 </View>
               </View>
