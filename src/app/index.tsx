@@ -304,7 +304,7 @@ export default function SurveyScreen() {
       };
 
       await fetch(
-        "https://script.google.com/macros/s/AKfycbx1kDj7SANE8jJvLNabG2ZYtjk5_7UL5XNBbyMQYLBWXDdOJSEWtnurrKPqQ0om2vNz/exec",
+        "https://script.google.com/macros/s/AKfycbyrD7DMflNs6pvcwbkyMSRNGfMDMu7fHK1Quscvtvh7tvsZnDOK-RuIBUAiMrQ_CDnj/exec",
         {
           method: "POST",
           headers: { "Content-Type": "text/plain;charset=utf-8" },
